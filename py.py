@@ -14,7 +14,7 @@ WIDTH = 500
 FONT = font.Font(family ="calibri", size ="16", weight ="bold")
 
 
-def InstaDownloader(URL):
+def download(URL):
     try:
         if (URL):
             SESSIONID = "18614737527%3ApTLwFoXv5BZohu%3A4"
