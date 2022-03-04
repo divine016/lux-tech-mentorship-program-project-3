@@ -11,7 +11,7 @@ insta.minsize(550,450)
 insta.maxsize(600,500)
 HEIGHT = 400
 WIDTH = 500
-FONT = font.Font(family ="calibri", size ="16", weight ="bold")
+FONT = font.Font(family ="serif", size ="16", weight ="bold")
 
 
 def download(URL):
@@ -49,20 +49,20 @@ label1.place(relx = 0.48, rely = 0.1, relheight =0.1)
 
 
 
-FONT = font.Font(family ="calibri", size ="10", weight ="bold")
+FONT = font.Font(family ="serif", size ="10", weight ="bold")
 label2 = Label(frame, text = "Enter URL address: ", font =FONT, bd =5, fg= "#e52165",bg="white")
 label2.place(relx = 0.48, rely = 0.25, relheight =0.1)
 
 entry = Entry(frame, font = FONT, fg = "#fbad50")
 entry.place(relx = 0.48, rely = 0.35,relwidth=0.4, relheight = 0.05)
 
-button1 = Button(insta, text = "Download", font = FONT, bg = "pink", fg = "black", activeforeground = "pink", activebackground = "black",command=lambda:download(entry.get()))
+button1 = Button(insta, text = "Download", font = FONT, bg = "pink", fg = "black", activeforeground = "black", activebackground = "black",command=lambda:download(entry.get()))
 button1.place(relx = 0.48,rely = 0.45,relwidth = 0.2, relheight = 0.06)
 
 label2 = Label(frame, text = "Instructions: ", font =FONT, bd =5, fg= "#0d1137",bg="white")
 label2.place(relx = 0.48, rely = 0.6, relheight =0.1)
 
-FONT = font.Font(family ="Times New Roman", size ="10", weight ="bold")
+FONT = font.Font(family ="serif", size ="10", weight ="bold")
 TEXT="1.Only public account reels can be downloaded\n2.Enter the URL address of reel from the Instagram\n3.This is not meant to be used for mischeif"
 label2 = Label(frame, text = TEXT, font =FONT, bd =5, fg= "#cd486b",justify=LEFT,bg="white")
 label2.place(relx = 0.48, rely = 0.7, relheight =0.1)
